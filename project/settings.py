@@ -42,6 +42,9 @@ INSTALLED_APPS = [
     'rest_framework',
 
     # aplications locales
+    'apps.tags',
+    'apps.cooments',
+    'apps.publications',
     
 ]
 
