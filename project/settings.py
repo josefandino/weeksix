@@ -43,7 +43,7 @@ INSTALLED_APPS = [
 
     # aplications locales
     'apps.tags',
-    'apps.cooments',
+    'apps.comments',
     'apps.publications',
     
 ]
