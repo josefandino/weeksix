@@ -1,8 +1,7 @@
 from rest_framework.routers import DefaultRouter
 
-# from apps.comments.views import Comment
-#  teermianr las visatas par que se peuda usar
+from apps.comments.views import Comment
 
 router = DefaultRouter()
-# router.register(r'comments', Comment)
+router.register(r'comments', Comment)
 urlpatterns = router.urls

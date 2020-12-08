@@ -4,7 +4,7 @@ from apps.comments.models import Comment
 
 
 # Create your models here.
-class Publications(models.Model):
+class Publication(models.Model):
     title = models.CharField(max_length=250)
     author = models.CharField(max_length=30)
     date = models.DateField()
