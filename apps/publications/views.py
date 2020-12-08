@@ -2,8 +2,8 @@ from rest_framework import generics, viewsets, status
 from rest_framework.decorators import action
 from rest_framework.response import Response
 
+from .. import publications
 from ..publications.serializer import PublicationSerializer
-from ..comments.serializer import CommentSerializer
 from ..publications.models import Publication
 from ..tags.serializer import TagSerializer
 from ..tags.models import Tag

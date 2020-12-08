@@ -24,8 +24,8 @@ class Tagviewsets(viewsets.ModelViewSet):
             if publication.is_valid():
                 publication.save()
                 return Response(status=status.HTTP_201_CREATED)
-            else:
-                return Response(status=status.HTTP_400_BAD_REQUEST, data=entrada.errors)
+        else:
+                return Response(status=status.HTTP_400_BAD_REQUEST, )
         if request.method == 'DELETE':
             publicaciones_id = request.data['id']
             for publicaciones_id in publicaciones_id:
