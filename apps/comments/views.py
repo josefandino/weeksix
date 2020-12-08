@@ -1,7 +1,12 @@
 # Create your views here.
 from rest_framework.decorators import action
 from rest_framework.response import Response
+<<<<<<< HEAD
 from rest_framework import viewsets, status
+=======
+from rest_framework import viewsets
+from rest_framework import status
+>>>>>>> 13ddd2046f9259766f16ab407bf620a236704a09
 
 from ..comments.models import Comment
 from ..comments.serializer import CommentSerializer

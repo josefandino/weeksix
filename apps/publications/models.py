@@ -1,11 +1,11 @@
 from django.db import models
-from apps.tags.models import Tag
-from apps.comments.models import Comment
 
+from ..tags.models import Tag
+from ..comments.models import Comment
 
-# Create your models here.
 class Publication(models.Model):
-    title = models.CharField(max_length=250)
+    objects = None
+    title = models.CharField(max_length=50)
     author = models.CharField(max_length=30)
     date = models.DateField()
     content = models.TextField()
