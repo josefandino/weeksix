@@ -1,13 +1,13 @@
-from apps.tags.serializer import TagSerializer
-from apps.tags.models import Tag
 from rest_framework import generics, viewsets, status
-from apps.publications.serializer import PublicationSerializer
-from apps.publications.models import Publication
 from rest_framework.response import Response
 from rest_framework.decorators import action
 
+from ..tags.models import Tag
+from ..tags.serializer import TagSerializer
+from ..publications.models import Publication
+from ..publications.serializer import PublicationSerializer
 
-# Create your views here.
+
 class Tagviewsets(viewsets.ModelViewSet) :
     queryset = Tag.objects.all()
     serializer_class = TagSerializer

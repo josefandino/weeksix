@@ -1,14 +1,14 @@
-from apps.publications.serializer import PublicationSerializer
-from apps.tags.serializer import TagSerializer
-from apps.tags.models import Tag
-from apps.publications.models import Publication
-from apps.comments.serializer import CommentSerializer
 from rest_framework import generics, viewsets, status
 from rest_framework.decorators import action
 from rest_framework.response import Response
 
+from ..publications.serializer import PublicationSerializer
+from ..comments.serializer import CommentSerializer
+from ..publications.models import Publication
+from ..tags.serializer import TagSerializer
+from ..tags.models import Tag
 
-# Create your views here.
+
 class PublicacionViewSet(viewsets.ModelViewSet):
     queryset = Publication.objects.all()
     serializer_class = PublicationSerializer
