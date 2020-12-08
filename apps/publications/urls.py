@@ -1,8 +1,8 @@
 from rest_framework.routers import DefaultRouter
 from django.urls import path
 
-from .views import PublicacionViewSet
+from .views import PublicationViewset
 
 router = DefaultRouter()
-router.register(r'', PublicacionViewSet)
+router.register(r'', PublicationViewset)
 urlpatterns = router.urls

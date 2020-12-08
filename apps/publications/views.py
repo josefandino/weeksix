@@ -9,7 +9,7 @@ from ..tags.serializer import TagSerializer
 from ..tags.models import Tag
 
 
-class PublicacionViewSet(viewsets.ModelViewSet):
+class PublicationViewset(viewsets.ModelViewSet):
     queryset = Publication.objects.all()
     serializer_class = PublicationSerializer
 

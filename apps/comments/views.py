@@ -12,7 +12,7 @@ class CommentView(viewsets.ModelViewSet):
     queryset = Comment.objects.all()
     serializer_class = CommentSerializer
 
-    @action(methods=['GET', 'POST', 'DELETE'], detail=True)
+    @action(methods={'GET', 'POST', 'DELETE'}, detail=True)
     def publications(self, request, pk=None):
         Comment = self.get_object()
         if request.method == 'GET':
